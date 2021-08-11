@@ -29,6 +29,8 @@ def find_streaks():
 
 def plate_solve():
     ast = AstrometryNet()
+    # this is an api key just for my account I think, you can probably use it though, 
+    # can't remember exactly but if you get stuck maybe I can help you. Let me now
     ast.api_key = 'fzyialllobrsoflj'
     f = open('headers.txt', "w")
 
@@ -70,7 +72,7 @@ def compute_radec():
     # sky3 = w2.pixel_to_world(position3[0], position3[1])
 
     # for use in orbdetpy
-    real_obs = [[t1['DATE-OBS'] + 'Z', sky1.ra.value, sky1.dec.value]],
+    # real_obs = [[t1['DATE-OBS'] + 'Z', sky1.ra.value, sky1.dec.value]],
                 # ['2021-02-18T09:00:01.6032613Z', sky2.ra.value, sky2.dec.value],
                 # [t2['DATE-OBS'] + 'Z', sky3.ra.value, sky3.dec.value]]
 
